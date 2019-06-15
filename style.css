@@ -1,0 +1,17 @@
+body {
+    background-color: powderblue;
+    font-family: monospace;
+}
+
+.center  {
+    text-align: center;
+    color: blue;
+    }
+p   {
+    color: red;
+    }
+
+.left , h1.center{
+    color: rgb(80, 55, 3);
+    border: 16px solid white
+}
