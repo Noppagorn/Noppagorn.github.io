@@ -6,7 +6,9 @@
 
 	<link rel="stylesheet" media="screen" href="style.css?v=8may2013">
 	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.csszengarden.com/zengarden.xml">
-
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Dave Shea">
 	<meta name="description" content="A demonstration of what can be accomplished visually through CSS-based design.">
@@ -47,8 +49,47 @@
 
 		
 -->
+<style>
+        body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+        body, html {
+          height: 100%;
+          color: #777;
+          line-height: 1.8;
+        }
+        
+        /* Create a Parallax Effect */
+        .bgimg-1, .bgimg-2, .bgimg-3 {
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        
+        /* First image (Logo. Full height) */
+        .bgimg-1 {
+          background-image: url('https://www.rd.com/wp-content/uploads/2017/11/longest-airplane-flight-in-world-392771239-shutterstock-Alexey-Y-Petrov.jpg');
+          min-height: 100%;
+        }
 
+        .w3-wide {letter-spacing: 10px;}
+        .w3-hover-opacity {cursor: pointer;}
+        
+        /* Turn off parallax scrolling for tablets and phones */
+        @media only screen and (max-device-width: 1600px) {
+          .bgimg-1, .bgimg-2, .bgimg-3 {
+            background-attachment: scroll;
+            min-height: 400px;
+          }
+        }
+        </style>
 <body id="css-zen-garden">
+
+	<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+			<div class="w3-display-middle" style="white-space:nowrap;">
+				<span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">CSS <span class="w3-hide-small">Zen</span> Garden</span>
+			</div>
+	</div>
+
 <div class="page-wrapper">
 
 	<section class="intro" id="zen-intro">
@@ -57,12 +98,12 @@
 			<h2>The Beauty of <abbr title="Cascading Style Sheets">CSS</abbr> Design</h2>
 		</header>
 
-		<div class="summary" id="zen-summary" role="article">
+		<div class="w3-center w3-padding-large w3-gray w3-xlarge w3-animate-opacity" id="zen-summary" role="article">
 			<p>A demonstration of what can be accomplished through <abbr title="Cascading Style Sheets">CSS</abbr>-based design. Select any style sheet from the list to load it into this page.</p>
 			<p>Download the example <a href="/examples/index" title="This page's source HTML code, not to be modified.">html file</a> and <a href="/examples/style.css" title="This page's sample CSS, the file you may modify.">css file</a></p>
 		</div>
 
-		<div class="preamble" id="zen-preamble" role="article">
+		<div class="w3-content w3-container w3-padding-64" id="zen-preamble" role="article">
 			<h3>The Road to Enlightenment</h3>
 			<p>Littering a dark and dreary road lay the past relics of browser-specific tags, incompatible <abbr title="Document Object Model">DOM</abbr>s, broken <abbr title="Cascading Style Sheets">CSS</abbr> support, and abandoned browsers.</p>
 			<p>We must clear the mind of the past. Web enlightenment has been achieved thanks to the tireless efforts of folk like the <abbr title="World Wide Web Consortium">W3C</abbr>, <abbr title="Web Standards Project">WaSP</abbr>, and the major browser creators.</p>
